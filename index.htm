@@ -19,8 +19,8 @@
 <meta content="device-width">
         <style>
             .center {
-                height:80px;
-                width:80px;
+                height:100px;
+                width:100px;
                 border-radius:60%;
                 border-style:hidden;
                 margin-right:auto;
@@ -83,7 +83,13 @@
         
             
             body{
+                background-image: url("Sailor\ with\ a\ beard.gif");
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                background-position:center;
                 background-color:black;
+                background-size:cover;/*to make an image cover the full screen use "cover"*/
+    
                 
                 
             }
@@ -101,8 +107,8 @@
             }
             img{
                 
-                height:60px;
-                width:60px;
+                height:80px;
+                width:80px;
                 border-radius: 60%;
                 margin-left:auto;
                 margin-right:auto;
@@ -114,22 +120,73 @@
 
 
             }
+            /*
             .cnct{
-                margin-left:auto;
+                margin-left:30%;
                 margin-right:auto;
                 border: 2px solid white;
                 border-radius:4px;
                 color:black;
-                padding:4px 3px;
                 display:block;
+                padding:4px 3px;
                 width:fit-content;
                 font-weight:bolder;
                 background:cyan;
+                font-size:9px;
                 
 
 
+            }  */
+            
+            .cnct
+            {
+
+                color:white;
+                border:2px solid rgb(218,99,93);
+                background:rgb(218,99,93);
+                padding:4px 2px 4px 2px;
+                border-radius:5px;
+                font-weight:bold;
+                font-size:9px;
+                width: 75px;
+            }
+            .twt{
+              
+                color:white;
+                text-decoration: none;
+                font-size:9px;
+                font-weight:bold;
+                border:2px solid white;
+                border-radius:5px;
+                width:60px;
+                padding:4px 2px 4px 2px;
+                background-color:azure;
+                
+                
+               
+            }
+            .float-container
+            {
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:baseline;
+                /*border: 4px solid red;*/
             }
 
+            .item
+            {
+                width:86px;
+                
+            }
+
+            a:hover
+            {
+               
+               color:black;
+               text-decoration-color: black;
+            }
+           
             
         </style>
 
@@ -141,7 +198,7 @@
             <img src="Animation Fun GIF by Natt Rocha - Find & Share on GIPHY.gif" alt="Hi, I'm Jawad!" class="center">
         <p id="pro">💪Hi, I'm Jawad!</p>
     </div>
-        <div class="adjust-line-height"><p class="motto">I love to bu_ild and design brands</p>
+        <div class="adjust-line-height"><p class="motto">I love to build and design brands</p>
             </div>
             <p class="emoj">🕸 One of my favourite quote:</p>
             <p class="cobra">"Knowing trees, I understand the meaning of patience.<br>
@@ -155,10 +212,15 @@
 
             </div>
 <br>
-            <div>
-                <p1 class="cnct">Connect With Me:</p1>
-                <br>
-
-        </div>
+<div class="float-container">
+            <div class="item">
+                <p1 class="cnct">Connect With Me:</p1> </div>
+              <div class="item">  <p class="twt"><a href="https://twitter.com/abidibnazam">Twitter</a>
+                </p> </div>
+                </div>
+            <br>
+            <div class="tunu">
+                <img src="Prometheus's cat.gif" alt="!!! See ya later Hoooman!!!">
+            </div>
     </body>
 </html>
